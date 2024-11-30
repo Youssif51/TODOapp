@@ -34,7 +34,7 @@ This project is a **Node.js** application that provides an API for user authenti
 ├── package.json             # Project dependencies and scripts
 └── README.md                # Project documentation
 
-
+---
 ## Endpoints
 
 ### 1. Authentication
