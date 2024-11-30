@@ -35,18 +35,20 @@ This project is a **Node.js** application that provides an API for user authenti
 └── README.md                # Project documentation
 
 
-Endpoints
-1. Authentication
-POST /login
-Description: Authenticates the user and returns a JWT token.
-Request Body:
-json
-Copy code
+## Endpoints
+
+### 1. Authentication
+**POST** `/login`  
+**Description**: Authenticates the user and returns a JWT token.  
+
+**Request Body**:
+```json
 {
   "email": "user@example.com",
   "password": "password123"
 }
 Response:
+
 json
 Copy code
 {
@@ -55,9 +57,14 @@ Copy code
 2. Profile
 GET /profile
 Description: Returns the logged-in user's profile.
+
 Headers:
+
+makefile
+Copy code
 Authorization: Bearer your_jwt_token
 Response:
+
 json
 Copy code
 {
@@ -65,14 +72,12 @@ Copy code
   "username": "john_doe",
   "email": "john.doe@example.com"
 }
-
 Technologies Used
 Node.js: JavaScript runtime environment.
 Express.js: Framework for building web APIs.
 PostgreSQL: Database for storing user data.
 JWT: For secure authentication.
 bcrypt: For hashing passwords.
-
 Prerequisites
 Node.js (v16+)
 PostgreSQL (v13+)
